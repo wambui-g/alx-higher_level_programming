@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    form sys import argv
+    from sys import argv
 argc = len(argv)
 if argc < 2:
-    print("{} arguments:".format(argc - 1))
+    print("{} arguments.".format(argc - 1))
 else:
     if argc == 2:
         print("{} argument:".format(argc - 1))
