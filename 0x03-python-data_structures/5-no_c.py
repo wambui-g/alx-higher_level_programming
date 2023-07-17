@@ -4,4 +4,4 @@ def no_c(my_string):
     for checker in my_string:
         if checker != 'c' and checker != 'C':
             result.append(checker)
-        return''.join(checker)
+        return result
