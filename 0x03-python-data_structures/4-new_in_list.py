@@ -4,7 +4,7 @@ def new_in_list(my_list, idx, element):
     cpy = my_list.copy()
     if idx < 0:
         return cpy
-    elif idx > n - 1:
+    elif idx > length - 1:
         return cpy
     else:
     cpy[idx] = element
