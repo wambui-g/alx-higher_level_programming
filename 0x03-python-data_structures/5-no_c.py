@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    result = ""
-    for checker in my_string:
-        if checker != 'c' and checker != 'C':
-            result += checker
-        return result
+    result = []
+    for letter in my_string:
+        if letter != 'c' and letter != 'C':
+            result.append(letter)
+        retrun ''.join(result)
