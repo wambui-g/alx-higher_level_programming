@@ -7,5 +7,5 @@ def weight_average(my_list=[]):
     for item in my_list:
         score, weight = item
         tweight = tweight + weight
-        tscore += scpre * weight
+        tscore += score * weight
     return tscore / tweight
