@@ -4,10 +4,18 @@
 
 class Rectangle:
     """defined an empty Rectangle class"""
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """initializes the rectangle"""
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
+
+    def __del__(self):
+        """Prints string when Instance deleted"""
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
@@ -54,3 +62,7 @@ class Rectangle:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
         return string
+
+    def __repr__(self):
+        """returns string rep of the rectngle for reproduction"""
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)

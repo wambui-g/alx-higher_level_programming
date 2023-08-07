@@ -9,6 +9,10 @@ class Rectangle:
         self.height = height
         self.width = width
 
+    def __del__(self):
+        """Prints string when Instance deleted"""
+        print("Bye rectangle...")
+
     @property
     def width(self):
         """getter for private instance attribute"""
@@ -54,3 +58,7 @@ class Rectangle:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
         return string
+
+    def __repr__(self):
+        """returns string rep of the rectngle for reproduction"""
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
