@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """module defines MyList subclass that inherits from class"""
 
+
 class MyList(list):
     """a subclass of list class"""
     def __init__(self):
