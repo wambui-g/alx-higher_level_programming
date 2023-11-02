@@ -1,0 +1,3 @@
+Python
+MYSQLdb
+SQLAlchemy
